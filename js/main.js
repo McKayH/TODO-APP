@@ -1,28 +1,26 @@
 let lists = [];
-let items = [];
 
 function addNewList(){
-    const newL = document.getElementById('listIn').value;
-    if(newL === '')
-    {
-        return document.getElementById('listIn').value = '';
-    }
-    lists.push(newL);
-    document.getElementById('listIn').value = '';
-    displayList();
+   const given = {
+       name: document.getElementById('listIn').value,
+       Items: [],
+   }
+   lists.push(given);
+   displayList();
 }
 
 function displayList(){
     let listStr = '';
     lists.forEach(index => {
-        listStr += `<li class="listClass">
+        listStr += `<li class="listClass" id="${index.name}" onclick="displayToDo()">
         <button class=" deleteList mdl-button mdl-js-button mdl-button--icon">
-            <i class="material-icons">cancel</i>
+        <i class="material-icons">cancel</i>
         </button>
-        ${index} 
-      </li>`;
+        ${index.name} 
+        </li>`;
     });
     document.getElementById('myLists').innerHTML = listStr;
+    document.getElementById('listIn').value = '';
 }
 function addGoal(){
     document.getElementById("textInModal").style.display = "flex";
@@ -55,6 +53,6 @@ function displayItems(){
                     </button>
                 </li>`;
     });
-    document.getElementById('liItem').innerHTML = goal;
+    document.querySelector('liItem').innerHTML = goal;
     document.getElementById("textInModal").style.display = "none";
 }
