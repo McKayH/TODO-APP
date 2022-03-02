@@ -1,0 +1,136 @@
+body {
+  width: 100%;
+  background-color: #5E4037;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.mdl-layout__container {
+  width: 80%;
+  height: 95%;
+  border: 2px solid #333;
+}
+
+main {
+  background-color: #eaeaea;
+  margin: 0;
+}
+main .page-content {
+  height: 100%;
+}
+main .mdl-grid {
+  padding: 0;
+  height: 100%;
+}
+main #side {
+  border-right: 1px solid #dcdcdc;
+  background-color: #e0e0e0;
+  align-items: center;
+  margin: 0;
+}
+main #side form {
+  width: 90%;
+  margin-left: 10%;
+}
+main #side form input {
+  height: 40px;
+}
+main #side form button {
+  background-color: #FFFF00;
+  width: 90%;
+}
+main #side h3 {
+  margin-left: 10%;
+}
+main #side #myLists {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0;
+}
+main #side #myLists .listClass {
+  font-size: medium;
+  list-style: none;
+  padding: 5% 0 5% 10%;
+}
+main #side #myLists .listClass:hover {
+  color: #fff;
+  background-color: #795648;
+  cursor: pointer;
+}
+main #side #myLists .listClass:hover .deleteList {
+  color: black;
+}
+main #textInModal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(85, 85, 85, 0.4);
+  z-index: 2;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+main #textInModal .mainPart {
+  background-color: #fff;
+  width: 40%;
+  height: 200px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+main #mainContain {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #mainContain .demo-card-wide {
+  width: 80%;
+  height: 80%;
+}
+main #mainContain .mdl-card__title {
+  margin-bottom: 20px;
+}
+main #mainContain .mdl-card__menu {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+main #mainContain .descr {
+  margin-top: 10px 0 0px 0;
+}
+main #mainContain #liItem {
+  overflow-y: auto;
+}
+main #mainContain #liItem .toDo {
+  border-bottom: 2px solid gray;
+  width: 95%;
+  margin: 10px 0 10px 5px;
+  display: flex;
+  justify-content: space-around;
+}
+main #mainContain #liItem .goal {
+  height: 50px;
+  padding: 0 2%;
+  display: flex;
+  flex-flow: row wrap;
+  overflow-y: scroll;
+}
+main #mainContain #liItem .goal .text {
+  margin-right: 25px;
+  flex-grow: 1;
+  margin-left: 5px;
+}
+main #mainContain #liItem .doneButton {
+  background-color: #FFFF00;
+  font-size: 1em;
+  padding: 0;
+  margin-right: 10px;
+}
+main #mainContain #liItem .deleteItem {
+  margin-left: 5px;
+}
+
+/*# sourceMappingURL=todo.css.map */

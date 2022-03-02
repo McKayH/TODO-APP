@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <Title>TODO Workspace</Title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-yellow.min.css" />
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js" ></script>
+        <link rel="stylesheet" href="css/todo.css">
+    </head>
+    <body>
+            <!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Organize</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                </nav>
+            </div>
+        </header>
+        <!-- <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Title</span>
+            <nav class="mdl-navigation">
+            </nav>
+        </div> -->
+        <!-- work on this after func is done -->
+            <main class="mdl-layout__content">
+                <div class="page-content"><!-- Your content goes here -->
+                    
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--2-col mdl-cell--4-col-phone" id="side">
+                                    <form action="#">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                          <input class="mdl-textfield__input" type="text" id="listIn">
+                                          <label class="mdl-textfield__label" for="listIn">New List...</label>
+                                        </div>
+                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="addNewList()">Create</button>
+                                    </form>
+                                    <h3>Lists</h3>
+                                    <ul id="myLists"></ul>
+                        </div>
+                        <div class="mdl-cell mdl-cell--10-col mdl-cell--8-col-tablet" id="mainContain">
+                            <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title">
+                                  <h2 class="mdl-card__title-text">Test</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                  Mauris sagittis pellentesque lacus eleifend lacinia...
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                </div>
+                                <div class="mdl-card__menu">
+                                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="addGoal()">
+                                        <i class="material-icons">add</i>
+                                    </button>
+                                    <div class="descr">Add Item</div>
+                                </div>
+                                <ul class="mdl-list" id="liItem"></ul>
+                            </div>
+                        </div>
+                        <div id="textInModal">
+                            <div class="mainPart">
+                                <h6>Write what you want to get done</h6>
+                                <form action="#">
+                                    <div class="mdl-textfield mdl-js-textfield">
+                                        <input class="mdl-textfield__input" id="whatToDo" type="text">
+                                        <label class="mdl-textfield__label" for="sample1">To Do...</label>
+                                    </div>
+                                </form>
+                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="addItem()">Add Task</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main> 
+        </div>
+    </body>
+    <script src="js/main.js"></script>
+</html>

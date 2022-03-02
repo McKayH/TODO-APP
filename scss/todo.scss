@@ -1,0 +1,149 @@
+@use "vars" as v;
+
+body{
+    width: 100%;
+    background-color: v.$dark-prim;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.mdl-layout__container{
+    width: 80%;
+    height: 95%;
+    border: 2px solid #333;
+
+}
+main{
+    background-color: #eaeaea;
+    margin: 0;
+
+    .page-content{
+        height: 100%;
+    }
+    .mdl-grid{
+        padding: 0;
+        height: 100%;
+    }
+
+    #side{
+        border-right: 1px solid #dcdcdc;
+        background-color: #e0e0e0;
+        align-items: center;
+        margin: 0;
+        form{
+            width: 90%;
+            margin-left: 10%;
+
+
+            input{
+                height: 40px;
+            }
+            button{  
+                background-color: v.$sec-col;
+                width:90%;
+            }
+        }
+        h3{
+            margin-left: 10%;
+        }
+        #myLists{
+            width: 100%;
+            padding: 0;
+            margin-bottom: 0;
+
+            .listClass{
+                font-size: medium;
+                list-style: none;
+                padding: 5% 0 5% 10%;
+                
+                
+            }
+            .listClass:hover{
+                color: #fff;
+                background-color: v.$primary;
+                cursor: pointer;
+
+                .deleteList{
+                    color:black;
+                }
+            }
+        }
+    }
+    #textInModal{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba($color: #555, $alpha: .4);
+        z-index: 2;
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+        .mainPart{
+            background-color: #fff;
+            width: 40%;
+            height: 200px;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    #mainContain{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .demo-card-wide{
+            width: 80%;
+            height: 80%;
+        }
+        .mdl-card__title{
+            margin-bottom: 20px;
+        }
+        .mdl-card__menu{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+        .descr{
+            margin-top: 10px 0 0px 0;
+
+        }
+        #liItem{
+            overflow-y: auto;
+            
+            .toDo{
+                border-bottom: 2px solid gray;
+                width: 95%;
+                margin: 10px 0 10px 5px;
+                display: flex;
+                justify-content: space-around;
+            }
+            .goal{
+                height: 50px;
+                padding: 0 2%;
+                display: flex;
+                flex-flow: row wrap;
+                overflow-y: scroll;
+
+
+                .text{
+                    margin-right: 25px;
+                    flex-grow: 1;
+                    margin-left: 5px;
+                }
+            }
+            .doneButton{
+                background-color: v.$sec-col;    
+                font-size: 1em; 
+                padding: 0;
+                margin-right: 10px;   
+            }
+            .deleteItem{
+                margin-left: 5px;
+            }
+        }
+    }
+}
