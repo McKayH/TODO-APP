@@ -100,16 +100,7 @@ main{
             height: 80%;
         }
         .mdl-card__title{
-            margin-bottom: 20px;
-        }
-        .mdl-card__menu{
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-        }
-        .descr{
-            margin-top: 10px 0 0px 0;
-
+            margin: 20px 0;
         }
         #liItem{
             overflow-y: auto;
@@ -135,8 +126,7 @@ main{
                     margin-left: 5px;
                 }
             }
-            .doneButton{
-                background-color: v.$sec-col;    
+            .doneButton{ 
                 font-size: 1em; 
                 padding: 0;
                 margin-right: 10px;   

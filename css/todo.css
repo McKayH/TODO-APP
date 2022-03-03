@@ -91,15 +91,7 @@ main #mainContain .demo-card-wide {
   height: 80%;
 }
 main #mainContain .mdl-card__title {
-  margin-bottom: 20px;
-}
-main #mainContain .mdl-card__menu {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-main #mainContain .descr {
-  margin-top: 10px 0 0px 0;
+  margin: 20px 0;
 }
 main #mainContain #liItem {
   overflow-y: auto;
@@ -124,7 +116,6 @@ main #mainContain #liItem .goal .text {
   margin-left: 5px;
 }
 main #mainContain #liItem .doneButton {
-  background-color: #FFFF00;
   font-size: 1em;
   padding: 0;
   margin-right: 10px;
