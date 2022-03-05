@@ -7,6 +7,10 @@ body{
     justify-content: center;
     align-items: flex-end;
 }
+.mdl-layout__header-row{
+    padding-left: 0;
+    margin-left: 2%;
+}
 .mdl-layout__container{
     width: 80%;
     height: 95%;
